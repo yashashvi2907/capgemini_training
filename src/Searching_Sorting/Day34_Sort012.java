@@ -2,7 +2,7 @@ package searching_sorting;
 
 import java.util.Arrays;
 
-public class Day32_Sort012 {
+public class Day34_Sort012 {
 
     public static void main(String[] args) {
 
