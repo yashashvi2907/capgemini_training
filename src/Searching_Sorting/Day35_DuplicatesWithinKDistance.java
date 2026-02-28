@@ -1,8 +1,8 @@
-package searching_sorting;
+package Searching_Sorting;
 
 import java.util.HashSet;
 
-public class Day32_DuplicatesWithinKDistance {
+public class Day35_DuplicatesWithinKDistance {
 
     public static void main(String[] args) {
 
