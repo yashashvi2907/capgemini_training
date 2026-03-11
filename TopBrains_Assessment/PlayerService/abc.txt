@@ -1,0 +1,3 @@
+first program for git commands
+adding this command by gemini 
+adding by copilot
