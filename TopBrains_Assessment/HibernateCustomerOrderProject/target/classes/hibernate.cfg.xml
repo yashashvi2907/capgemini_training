@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- PostgreSQL JDBC Driver -->
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+        <!-- Database Connection URL -->
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/hibernate_db
+        </property>
+
+        <!-- Database Username -->
+        <property name="hibernate.connection.username">
+            postgres
+        </property>
+
+        <!-- Database Password -->
+        <property name="hibernate.connection.password">
+            Khushi
+        </property>
+
+        <!-- PostgreSQL Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+
+        <!-- Automatically create/update tables -->
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">
+            true
+        </property>
+
+        <!-- Format SQL -->
+        <property name="hibernate.format_sql">
+            true
+        </property>
+
+        <!-- Entity Classes -->
+        <mapping class="org.example.entity.Customer"/>
+        <mapping class="org.example.entity.Order"/>
+
+    </session-factory>
+</hibernate-configuration>
