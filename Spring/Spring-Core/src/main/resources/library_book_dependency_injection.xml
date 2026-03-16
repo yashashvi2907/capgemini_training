@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id = "L1" class= "dependency_injection.Library">
+        <property name="id" value = "101"></property>
+        <property name="name" value = "friends"></property>
+        <property name="book" ref = "B1"></property>
+    </bean>
+    <bean id ="B1" class = "dependency_injection.Book">
+        <property name="bookid" value = "1"> </property>
+     <property name = "bookName" value = "Wings"></property>
+    </bean>
+</beans>
